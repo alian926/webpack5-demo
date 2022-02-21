@@ -1,0 +1,6 @@
+{
+    // 将ES6兼容转换
+    "presets": ["@babel/preset-env"],
+    // 处理async / await / import()等语法关键字的帮助函数
+    "plugins": ["@babel/plugin-transform-runtime"]
+}

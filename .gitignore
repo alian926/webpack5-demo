@@ -1,0 +1,23 @@
+node_modules
+*.log
+*-compiled.js
+node_modules/
+dev/
+# package-lock.json
+# yarn.lock
+/dist/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional eslint cache
+.eslintcache
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

@@ -1,0 +1,56 @@
+{
+    "name": "webpack-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js",
+        "analyzer": "cross-env NODE_ENV=production ANALYZER=true webpack --config build/webpack.prod.js",
+        "dev": "cross-env NODE_ENV=development webpack serve --config build/webpack.dev.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/plugin-transform-runtime": "^7.17.0",
+        "@babel/preset-env": "^7.16.11",
+        "autoprefixer": "^10.4.2",
+        "babel-loader": "^8.2.3",
+        "compression-webpack-plugin": "^9.2.0",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.6.0",
+        "css-minimizer-webpack-plugin": "^3.4.1",
+        "eslint": "^8.9.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^8.4.0",
+        "eslint-import-resolver-webpack": "^0.13.2",
+        "eslint-webpack-plugin": "^3.1.1",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.5.3",
+        "postcss-loader": "^6.2.1",
+        "progress-bar-webpack-plugin": "^2.1.0",
+        "sass": "^1.49.8",
+        "sass-loader": "^12.6.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.69.1",
+        "webpack-bundle-analyzer": "^4.5.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.7.4",
+        "webpack-merge": "^5.8.0",
+        "webpackbar": "^5.0.2"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
